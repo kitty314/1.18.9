@@ -7,9 +7,9 @@ import (
 	"net"
 	"sync"
 
-	"github.com/metacubex/mihomo/common/buf"
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/transport/vless/vision"
+	"github.com/kitty314/1.18.9/common/buf"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/transport/vless/vision"
 
 	"github.com/gofrs/uuid/v5"
 	"google.golang.org/protobuf/proto"

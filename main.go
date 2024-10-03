@@ -11,15 +11,15 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/metacubex/mihomo/component/geodata"
-	"github.com/metacubex/mihomo/component/updater"
-	"github.com/metacubex/mihomo/config"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/features"
-	"github.com/metacubex/mihomo/hub"
-	"github.com/metacubex/mihomo/hub/executor"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/rules/provider"
+	"github.com/kitty314/1.18.9/component/geodata"
+	"github.com/kitty314/1.18.9/component/updater"
+	"github.com/kitty314/1.18.9/config"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/constant/features"
+	"github.com/kitty314/1.18.9/hub"
+	"github.com/kitty314/1.18.9/hub/executor"
+	"github.com/kitty314/1.18.9/log"
+	"github.com/kitty314/1.18.9/rules/provider"
 
 	"go.uber.org/automaxprocs/maxprocs"
 )
@@ -49,7 +49,7 @@ func init() {
 	flag.StringVar(&externalControllerPipe, "ext-ctl-pipe", os.Getenv("CLASH_OVERRIDE_EXTERNAL_CONTROLLER_PIPE"), "override external controller pipe address")
 	flag.StringVar(&secret, "secret", os.Getenv("CLASH_OVERRIDE_SECRET"), "override secret for RESTful API")
 	flag.BoolVar(&geodataMode, "m", false, "set geodata mode")
-	flag.BoolVar(&version, "v", false, "show current version of mihomo")
+	flag.BoolVar(&version, "v", false, "show current version of clash")
 	flag.BoolVar(&testConfig, "t", false, "test configuration and exit")
 	flag.Parse()
 }
@@ -63,7 +63,7 @@ func main() {
 	}
 
 	if version {
-		fmt.Printf("Mihomo Meta %s %s %s with %s %s\n",
+		fmt.Printf("clash Meta %s %s %s with %s %s\n",
 			C.Version, runtime.GOOS, runtime.GOARCH, runtime.Version(), C.BuildTime)
 		if tags := features.Tags(); len(tags) != 0 {
 			fmt.Printf("Use tags: %s\n", strings.Join(tags, ", "))

@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/metacubex/mihomo/common/nnip"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/common/nnip"
+	"github.com/kitty314/1.18.9/log"
 
 	"golang.org/x/sys/windows"
 )

@@ -6,8 +6,8 @@ import (
 	"net/netip"
 	"strconv"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	C "github.com/kitty314/1.18.9/constant"
 )
 
 type Base struct {

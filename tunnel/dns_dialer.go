@@ -8,11 +8,11 @@ import (
 	"net"
 	"strings"
 
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/resolver"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/tunnel/statistic"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/component/dialer"
+	"github.com/kitty314/1.18.9/component/resolver"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/tunnel/statistic"
 )
 
 const DnsRespectRules = "RULES"

@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/metacubex/mihomo/tunnel/statistic"
+	"github.com/kitty314/1.18.9/tunnel/statistic"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

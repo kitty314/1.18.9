@@ -11,35 +11,35 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter"
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/adapter/outboundgroup"
-	"github.com/metacubex/mihomo/adapter/provider"
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/auth"
-	"github.com/metacubex/mihomo/component/cidr"
-	"github.com/metacubex/mihomo/component/fakeip"
-	"github.com/metacubex/mihomo/component/geodata"
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
-	"github.com/metacubex/mihomo/component/keepalive"
-	P "github.com/metacubex/mihomo/component/process"
-	"github.com/metacubex/mihomo/component/resolver"
-	"github.com/metacubex/mihomo/component/resource"
-	"github.com/metacubex/mihomo/component/sniffer"
-	tlsC "github.com/metacubex/mihomo/component/tls"
-	"github.com/metacubex/mihomo/component/trie"
-	"github.com/metacubex/mihomo/component/updater"
-	C "github.com/metacubex/mihomo/constant"
-	providerTypes "github.com/metacubex/mihomo/constant/provider"
-	snifferTypes "github.com/metacubex/mihomo/constant/sniffer"
-	"github.com/metacubex/mihomo/dns"
-	L "github.com/metacubex/mihomo/listener"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/log"
-	R "github.com/metacubex/mihomo/rules"
-	RC "github.com/metacubex/mihomo/rules/common"
-	RP "github.com/metacubex/mihomo/rules/provider"
-	T "github.com/metacubex/mihomo/tunnel"
+	"github.com/kitty314/1.18.9/adapter"
+	"github.com/kitty314/1.18.9/adapter/outbound"
+	"github.com/kitty314/1.18.9/adapter/outboundgroup"
+	"github.com/kitty314/1.18.9/adapter/provider"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/auth"
+	"github.com/kitty314/1.18.9/component/cidr"
+	"github.com/kitty314/1.18.9/component/fakeip"
+	"github.com/kitty314/1.18.9/component/geodata"
+	clashHttp "github.com/kitty314/1.18.9/component/http"
+	"github.com/kitty314/1.18.9/component/keepalive"
+	P "github.com/kitty314/1.18.9/component/process"
+	"github.com/kitty314/1.18.9/component/resolver"
+	"github.com/kitty314/1.18.9/component/resource"
+	"github.com/kitty314/1.18.9/component/sniffer"
+	tlsC "github.com/kitty314/1.18.9/component/tls"
+	"github.com/kitty314/1.18.9/component/trie"
+	"github.com/kitty314/1.18.9/component/updater"
+	C "github.com/kitty314/1.18.9/constant"
+	providerTypes "github.com/kitty314/1.18.9/constant/provider"
+	snifferTypes "github.com/kitty314/1.18.9/constant/sniffer"
+	"github.com/kitty314/1.18.9/dns"
+	L "github.com/kitty314/1.18.9/listener"
+	LC "github.com/kitty314/1.18.9/listener/config"
+	"github.com/kitty314/1.18.9/log"
+	R "github.com/kitty314/1.18.9/rules"
+	RC "github.com/kitty314/1.18.9/rules/common"
+	RP "github.com/kitty314/1.18.9/rules/provider"
+	T "github.com/kitty314/1.18.9/tunnel"
 
 	orderedmap "github.com/wk8/go-ordered-map/v2"
 	"golang.org/x/exp/slices"
@@ -175,7 +175,7 @@ type TLS struct {
 	CustomTrustCert []string
 }
 
-// Config is mihomo config manager
+// Config is clash config manager
 type Config struct {
 	General       *General
 	Controller    *Controller
@@ -711,7 +711,7 @@ func parseGeneral(cfg *RawConfig) (*General, error) {
 	geodata.SetGeoSiteUrl(cfg.GeoXUrl.GeoSite)
 	geodata.SetMmdbUrl(cfg.GeoXUrl.Mmdb)
 	geodata.SetASNUrl(cfg.GeoXUrl.ASN)
-	mihomoHttp.SetUA(cfg.GlobalUA)
+	clashHttp.SetUA(cfg.GlobalUA)
 	resource.SetETag(cfg.ETagSupport)
 
 	if cfg.KeepAliveIdle != 0 {

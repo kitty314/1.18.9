@@ -6,8 +6,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/metacubex/mihomo/component/resolver"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/component/resolver"
+	"github.com/kitty314/1.18.9/log"
 
 	"golang.org/x/exp/slices"
 )

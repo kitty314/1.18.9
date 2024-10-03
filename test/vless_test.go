@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/docker/docker/api/types/container"
-	"github.com/metacubex/mihomo/adapter/outbound"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.18.9/adapter/outbound"
+	C "github.com/kitty314/1.18.9/constant"
 	"github.com/stretchr/testify/assert"
 )
 
 // TODO: fix udp test
-func TestMihomo_VlessTLS(t *testing.T) {
+func Testclash_VlessTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,
@@ -51,7 +51,7 @@ func TestMihomo_VlessTLS(t *testing.T) {
 }
 
 // TODO: fix udp test
-func TestMihomo_VlessXTLS(t *testing.T) {
+func Testclash_VlessXTLS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageXray,
 		ExposedPorts: defaultExposedPorts,
@@ -91,7 +91,7 @@ func TestMihomo_VlessXTLS(t *testing.T) {
 }
 
 // TODO: fix udp test
-func TestMihomo_VlessWS(t *testing.T) {
+func Testclash_VlessWS(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageVmess,
 		ExposedPorts: defaultExposedPorts,

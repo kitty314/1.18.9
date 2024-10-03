@@ -5,13 +5,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/common/lru"
-	"github.com/metacubex/mihomo/common/nnip"
-	"github.com/metacubex/mihomo/component/fakeip"
-	R "github.com/metacubex/mihomo/component/resolver"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/context"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/common/lru"
+	"github.com/kitty314/1.18.9/common/nnip"
+	"github.com/kitty314/1.18.9/component/fakeip"
+	R "github.com/kitty314/1.18.9/component/resolver"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/context"
+	"github.com/kitty314/1.18.9/log"
 
 	D "github.com/miekg/dns"
 )

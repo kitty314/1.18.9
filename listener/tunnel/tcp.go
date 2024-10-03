@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/transport/socks5"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/transport/socks5"
 )
 
 type Listener struct {

@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/metacubex/mihomo/hub/executor"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/hub/executor"
+	"github.com/kitty314/1.18.9/log"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"

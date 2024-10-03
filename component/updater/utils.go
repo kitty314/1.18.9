@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
+	clashHttp "github.com/kitty314/1.18.9/component/http"
 
 	"golang.org/x/exp/constraints"
 )
@@ -18,7 +18,7 @@ const defaultHttpTimeout = time.Second * 90
 func downloadForBytes(url string) ([]byte, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), defaultHttpTimeout)
 	defer cancel()
-	resp, err := mihomoHttp.HttpRequest(ctx, url, http.MethodGet, nil, nil)
+	resp, err := clashHttp.HttpRequest(ctx, url, http.MethodGet, nil, nil)
 	if err != nil {
 		return nil, err
 	}

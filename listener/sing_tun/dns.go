@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/component/resolver"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/listener/sing"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/component/resolver"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/listener/sing"
+	"github.com/kitty314/1.18.9/log"
 
 	"github.com/sagernet/sing/common/buf"
 	"github.com/sagernet/sing/common/bufio"

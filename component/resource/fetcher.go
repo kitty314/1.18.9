@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/metacubex/mihomo/common/utils"
-	types "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/common/utils"
+	types "github.com/kitty314/1.18.9/constant/provider"
+	"github.com/kitty314/1.18.9/log"
 
 	"github.com/sagernet/fswatch"
 	"github.com/samber/lo"

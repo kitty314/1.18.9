@@ -7,11 +7,11 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/metacubex/mihomo/common/lru"
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/component/resolver"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/common/lru"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/component/resolver"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/log"
 )
 
 type packetSender struct {

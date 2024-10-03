@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/docker/docker/api/types/container"
-	"github.com/metacubex/mihomo/adapter/outbound"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.18.9/adapter/outbound"
+	C "github.com/kitty314/1.18.9/constant"
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMihomo_Hysteria(t *testing.T) {
+func Testclash_Hysteria(t *testing.T) {
 	cfg := &container.Config{
 		Image:        ImageHysteria,
 		ExposedPorts: defaultExposedPorts,

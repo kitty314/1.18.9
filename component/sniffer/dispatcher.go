@@ -6,11 +6,11 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/metacubex/mihomo/common/lru"
-	N "github.com/metacubex/mihomo/common/net"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/sniffer"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/common/lru"
+	N "github.com/kitty314/1.18.9/common/net"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/constant/sniffer"
+	"github.com/kitty314/1.18.9/log"
 )
 
 var (

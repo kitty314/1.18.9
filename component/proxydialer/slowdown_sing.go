@@ -4,7 +4,7 @@ import (
 	"context"
 	"net"
 
-	"github.com/metacubex/mihomo/component/slowdown"
+	"github.com/kitty314/1.18.9/component/slowdown"
 	M "github.com/sagernet/sing/common/metadata"
 )
 

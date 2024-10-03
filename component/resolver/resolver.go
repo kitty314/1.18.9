@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/trie"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/trie"
 
 	"github.com/metacubex/randv2"
 	"github.com/miekg/dns"

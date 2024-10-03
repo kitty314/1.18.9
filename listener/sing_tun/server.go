@@ -12,15 +12,15 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/iface"
-	"github.com/metacubex/mihomo/component/resolver"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/listener/sing"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	"github.com/kitty314/1.18.9/component/dialer"
+	"github.com/kitty314/1.18.9/component/iface"
+	"github.com/kitty314/1.18.9/component/resolver"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/constant/provider"
+	LC "github.com/kitty314/1.18.9/listener/config"
+	"github.com/kitty314/1.18.9/listener/sing"
+	"github.com/kitty314/1.18.9/log"
 
 	tun "github.com/metacubex/sing-tun"
 	"github.com/sagernet/sing/common"
@@ -337,7 +337,7 @@ func New(options LC.Tun, tunnel C.Tunnel, additions ...inbound.Addition) (l *Lis
 			Logger:                 log.SingLogger,
 			NetworkMonitor:         l.networkUpdateMonitor,
 			InterfaceFinder:        interfaceFinder,
-			TableName:              "mihomo",
+			TableName:              "clash",
 			DisableNFTables:        dErr == nil && disableNFTables,
 			RouteAddressSet:        &l.routeAddressSet,
 			RouteExcludeAddressSet: &l.routeExcludeAddressSet,

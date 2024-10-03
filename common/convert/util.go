@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/common/utils"
+	"github.com/kitty314/1.18.9/common/utils"
 
 	"github.com/metacubex/randv2"
 	"github.com/metacubex/sing-shadowsocks/shadowimpl"

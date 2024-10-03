@@ -7,8 +7,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/component/ca"
+	"github.com/kitty314/1.18.9/log"
 
 	D "github.com/miekg/dns"
 )

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	C "github.com/metacubex/mihomo/constant"
-	P "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
+	C "github.com/kitty314/1.18.9/constant"
+	P "github.com/kitty314/1.18.9/constant/provider"
+	"github.com/kitty314/1.18.9/log"
 )
 
 type classicalStrategy struct {

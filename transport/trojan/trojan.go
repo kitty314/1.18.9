@@ -12,13 +12,13 @@ import (
 	"net/http"
 	"sync"
 
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/pool"
-	"github.com/metacubex/mihomo/component/ca"
-	tlsC "github.com/metacubex/mihomo/component/tls"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/transport/socks5"
-	"github.com/metacubex/mihomo/transport/vmess"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/pool"
+	"github.com/kitty314/1.18.9/component/ca"
+	tlsC "github.com/kitty314/1.18.9/component/tls"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/transport/socks5"
+	"github.com/kitty314/1.18.9/transport/vmess"
 )
 
 const (

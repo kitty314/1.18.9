@@ -6,8 +6,8 @@ import (
 	"strings"
 	"sync"
 
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/rules/common"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/rules/common"
 
 	list "github.com/bahlo/generic-list-go"
 )

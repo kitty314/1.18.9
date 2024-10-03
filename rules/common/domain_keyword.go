@@ -3,7 +3,7 @@ package common
 import (
 	"strings"
 
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.18.9/constant"
 	"golang.org/x/net/idna"
 )
 

@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/proxydialer"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/adapter/outbound"
+	"github.com/kitty314/1.18.9/component/dialer"
+	"github.com/kitty314/1.18.9/component/proxydialer"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/constant/provider"
+	"github.com/kitty314/1.18.9/log"
 )
 
 type Relay struct {

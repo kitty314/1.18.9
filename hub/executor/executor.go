@@ -10,35 +10,35 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter"
-	"github.com/metacubex/mihomo/adapter/inbound"
-	"github.com/metacubex/mihomo/adapter/outboundgroup"
-	"github.com/metacubex/mihomo/component/auth"
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/component/dialer"
-	G "github.com/metacubex/mihomo/component/geodata"
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
-	"github.com/metacubex/mihomo/component/iface"
-	"github.com/metacubex/mihomo/component/profile"
-	"github.com/metacubex/mihomo/component/profile/cachefile"
-	"github.com/metacubex/mihomo/component/resolver"
-	"github.com/metacubex/mihomo/component/resource"
-	"github.com/metacubex/mihomo/component/sniffer"
-	tlsC "github.com/metacubex/mihomo/component/tls"
-	"github.com/metacubex/mihomo/component/trie"
-	"github.com/metacubex/mihomo/component/updater"
-	"github.com/metacubex/mihomo/config"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/dns"
-	"github.com/metacubex/mihomo/listener"
-	authStore "github.com/metacubex/mihomo/listener/auth"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/listener/inner"
-	"github.com/metacubex/mihomo/listener/tproxy"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/ntp"
-	"github.com/metacubex/mihomo/tunnel"
+	"github.com/kitty314/1.18.9/adapter"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	"github.com/kitty314/1.18.9/adapter/outboundgroup"
+	"github.com/kitty314/1.18.9/component/auth"
+	"github.com/kitty314/1.18.9/component/ca"
+	"github.com/kitty314/1.18.9/component/dialer"
+	G "github.com/kitty314/1.18.9/component/geodata"
+	clashHttp "github.com/kitty314/1.18.9/component/http"
+	"github.com/kitty314/1.18.9/component/iface"
+	"github.com/kitty314/1.18.9/component/profile"
+	"github.com/kitty314/1.18.9/component/profile/cachefile"
+	"github.com/kitty314/1.18.9/component/resolver"
+	"github.com/kitty314/1.18.9/component/resource"
+	"github.com/kitty314/1.18.9/component/sniffer"
+	tlsC "github.com/kitty314/1.18.9/component/tls"
+	"github.com/kitty314/1.18.9/component/trie"
+	"github.com/kitty314/1.18.9/component/updater"
+	"github.com/kitty314/1.18.9/config"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/constant/provider"
+	"github.com/kitty314/1.18.9/dns"
+	"github.com/kitty314/1.18.9/listener"
+	authStore "github.com/kitty314/1.18.9/listener/auth"
+	LC "github.com/kitty314/1.18.9/listener/config"
+	"github.com/kitty314/1.18.9/listener/inner"
+	"github.com/kitty314/1.18.9/listener/tproxy"
+	"github.com/kitty314/1.18.9/log"
+	"github.com/kitty314/1.18.9/ntp"
+	"github.com/kitty314/1.18.9/tunnel"
 )
 
 var mux sync.Mutex
@@ -174,7 +174,7 @@ func GetGeneral() *config.General {
 		FindProcessMode:         tunnel.FindProcessMode(),
 		Sniffing:                tunnel.IsSniffing(),
 		GlobalClientFingerprint: tlsC.GetGlobalFingerprint(),
-		GlobalUA:                mihomoHttp.UA(),
+		GlobalUA:                clashHttp.UA(),
 		ETagSupport:             resource.ETag(),
 	}
 
@@ -532,5 +532,5 @@ func Shutdown() {
 	tproxy.CleanupTProxyIPTables()
 	resolver.StoreFakePoolState()
 
-	log.Warnln("Mihomo shutting down")
+	log.Warnln("clash shutting down")
 }

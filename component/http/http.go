@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/listener/inner"
+	"github.com/kitty314/1.18.9/component/ca"
+	"github.com/kitty314/1.18.9/listener/inner"
 )
 
 var (

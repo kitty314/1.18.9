@@ -3,7 +3,7 @@ package cachefile
 import (
 	"net/netip"
 
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/log"
 
 	"github.com/metacubex/bbolt"
 )

@@ -3,10 +3,10 @@ package http
 import (
 	"net"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	"github.com/metacubex/mihomo/component/auth"
-	C "github.com/metacubex/mihomo/constant"
-	authStore "github.com/metacubex/mihomo/listener/auth"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	"github.com/kitty314/1.18.9/component/auth"
+	C "github.com/kitty314/1.18.9/constant"
+	authStore "github.com/kitty314/1.18.9/listener/auth"
 )
 
 type Listener struct {

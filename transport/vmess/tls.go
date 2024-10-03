@@ -6,8 +6,8 @@ import (
 	"errors"
 	"net"
 
-	"github.com/metacubex/mihomo/component/ca"
-	tlsC "github.com/metacubex/mihomo/component/tls"
+	"github.com/kitty314/1.18.9/component/ca"
+	tlsC "github.com/kitty314/1.18.9/component/tls"
 )
 
 type TLSConfig struct {

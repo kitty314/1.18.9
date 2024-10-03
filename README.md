@@ -3,17 +3,17 @@
   <br>Meta Kernel<br>
 </h1>
 
-<h3 align="center">Another Mihomo Kernel.</h3>
+<h3 align="center">Another clash Kernel.</h3>
 
 <p align="center">
-  <a href="https://goreportcard.com/report/github.com/MetaCubeX/mihomo">
-    <img src="https://goreportcard.com/badge/github.com/MetaCubeX/mihomo?style=flat-square">
+  <a href="https://goreportcard.com/report/github.com/kitty314/1.18.9">
+    <img src="https://goreportcard.com/badge/github.com/kitty314/1.18.9?style=flat-square">
   </a>
-  <img src="https://img.shields.io/github/go-mod/go-version/MetaCubeX/mihomo/Alpha?style=flat-square">
-  <a href="https://github.com/MetaCubeX/mihomo/releases">
-    <img src="https://img.shields.io/github/release/MetaCubeX/mihomo/all.svg?style=flat-square">
+  <img src="https://img.shields.io/github/go-mod/go-version/kitty314/1.18.9/Alpha?style=flat-square">
+  <a href="https://github.com/kitty314/1.18.9/releases">
+    <img src="https://img.shields.io/github/release/kitty314/1.18.9/all.svg?style=flat-square">
   </a>
-  <a href="https://github.com/MetaCubeX/mihomo">
+  <a href="https://github.com/kitty314/1.18.9">
     <img src="https://img.shields.io/badge/release-Meta-00b4f0?style=flat-square">
   </a>
 </p>
@@ -27,7 +27,7 @@
 - Remote groups allow users to implement powerful rules. Supports automatic fallback, load balancing or auto select node
   based off latency
 - Remote providers, allowing users to get node lists remotely instead of hard-coding in config
-- Netfilter TCP redirecting. Deploy Mihomo on your Internet gateway with `iptables`.
+- Netfilter TCP redirecting. Deploy clash on your Internet gateway with `iptables`.
 - Comprehensive HTTP RESTful API controller
 
 ## Dashboard
@@ -36,22 +36,22 @@ A web dashboard with first-class support for this project has been created; it c
 
 ## Configration example
 
-Configuration example is located at [/docs/config.yaml](https://github.com/MetaCubeX/mihomo/blob/Alpha/docs/config.yaml).
+Configuration example is located at [/docs/config.yaml](https://github.com/kitty314/1.18.9/blob/Alpha/docs/config.yaml).
 
 ## Docs
 
-Documentation can be found in [mihomo Docs](https://wiki.metacubex.one/).
+Documentation can be found in [clash Docs](https://wiki.metacubex.one/).
 
 ## For development
 
 Requirements:
 [Go 1.20 or newer](https://go.dev/dl/)
 
-Build mihomo:
+Build clash:
 
 ```shell
-git clone https://github.com/MetaCubeX/mihomo.git
-cd mihomo && go mod download
+git clone https://github.com/kitty314/1.18.9.git
+cd clash && go mod download
 go build
 ```
 

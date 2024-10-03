@@ -11,14 +11,14 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	"github.com/metacubex/mihomo/adapter/outbound"
-	CN "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/sockopt"
-	C "github.com/metacubex/mihomo/constant"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/listener/sing"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	"github.com/kitty314/1.18.9/adapter/outbound"
+	CN "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/sockopt"
+	C "github.com/kitty314/1.18.9/constant"
+	LC "github.com/kitty314/1.18.9/listener/config"
+	"github.com/kitty314/1.18.9/listener/sing"
+	"github.com/kitty314/1.18.9/log"
 
 	"github.com/metacubex/sing-quic/hysteria2"
 

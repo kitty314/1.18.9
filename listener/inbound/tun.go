@@ -4,10 +4,10 @@ import (
 	"errors"
 	"strings"
 
-	C "github.com/metacubex/mihomo/constant"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/listener/sing_tun"
-	"github.com/metacubex/mihomo/log"
+	C "github.com/kitty314/1.18.9/constant"
+	LC "github.com/kitty314/1.18.9/listener/config"
+	"github.com/kitty314/1.18.9/listener/sing_tun"
+	"github.com/kitty314/1.18.9/log"
 )
 
 type TunOption struct {

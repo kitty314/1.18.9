@@ -3,7 +3,7 @@ package callback
 import (
 	"sync"
 
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.18.9/constant"
 )
 
 type closeCallbackConn struct {

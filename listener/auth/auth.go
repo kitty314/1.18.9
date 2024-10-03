@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/metacubex/mihomo/component/auth"
+	"github.com/kitty314/1.18.9/component/auth"
 )
 
 type authStore struct {

@@ -6,13 +6,13 @@ import (
 	"errors"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter/outbound"
-	"github.com/metacubex/mihomo/common/callback"
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/dialer"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/constant/provider"
+	"github.com/kitty314/1.18.9/adapter/outbound"
+	"github.com/kitty314/1.18.9/common/callback"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/dialer"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/constant/provider"
 )
 
 type Fallback struct {

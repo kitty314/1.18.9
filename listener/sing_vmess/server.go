@@ -8,13 +8,13 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	N "github.com/metacubex/mihomo/common/net"
-	C "github.com/metacubex/mihomo/constant"
-	LC "github.com/metacubex/mihomo/listener/config"
-	"github.com/metacubex/mihomo/listener/sing"
-	"github.com/metacubex/mihomo/ntp"
-	mihomoVMess "github.com/metacubex/mihomo/transport/vmess"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	N "github.com/kitty314/1.18.9/common/net"
+	C "github.com/kitty314/1.18.9/constant"
+	LC "github.com/kitty314/1.18.9/listener/config"
+	"github.com/kitty314/1.18.9/listener/sing"
+	"github.com/kitty314/1.18.9/ntp"
+	clashVMess "github.com/kitty314/1.18.9/transport/vmess"
 
 	vmess "github.com/metacubex/sing-vmess"
 	"github.com/sagernet/sing/common"
@@ -85,7 +85,7 @@ func New(config LC.VmessServer, tunnel C.Tunnel, additions ...inbound.Addition) 
 	if config.WsPath != "" {
 		httpMux = http.NewServeMux()
 		httpMux.HandleFunc(config.WsPath, func(w http.ResponseWriter, r *http.Request) {
-			conn, err := mihomoVMess.StreamUpgradedWebsocketConn(w, r)
+			conn, err := clashVMess.StreamUpgradedWebsocketConn(w, r)
 			if err != nil {
 				http.Error(w, err.Error(), 500)
 				return

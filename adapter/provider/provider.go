@@ -11,14 +11,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/metacubex/mihomo/adapter"
-	"github.com/metacubex/mihomo/common/convert"
-	"github.com/metacubex/mihomo/common/utils"
-	mihomoHttp "github.com/metacubex/mihomo/component/http"
-	"github.com/metacubex/mihomo/component/resource"
-	C "github.com/metacubex/mihomo/constant"
-	types "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/tunnel/statistic"
+	"github.com/kitty314/1.18.9/adapter"
+	"github.com/kitty314/1.18.9/common/convert"
+	"github.com/kitty314/1.18.9/common/utils"
+	clashHttp "github.com/kitty314/1.18.9/component/http"
+	"github.com/kitty314/1.18.9/component/resource"
+	C "github.com/kitty314/1.18.9/constant"
+	types "github.com/kitty314/1.18.9/constant/provider"
+	"github.com/kitty314/1.18.9/tunnel/statistic"
 
 	"github.com/dlclark/regexp2"
 	"gopkg.in/yaml.v3"
@@ -124,7 +124,7 @@ func (pp *proxySetProvider) getSubscriptionInfo() {
 	go func() {
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second*90)
 		defer cancel()
-		resp, err := mihomoHttp.HttpRequestWithProxy(ctx, pp.Vehicle().Url(),
+		resp, err := clashHttp.HttpRequestWithProxy(ctx, pp.Vehicle().Url(),
 			http.MethodGet, nil, nil, pp.Vehicle().Proxy())
 		if err != nil {
 			return
@@ -133,7 +133,7 @@ func (pp *proxySetProvider) getSubscriptionInfo() {
 
 		userInfoStr := strings.TrimSpace(resp.Header.Get("subscription-userinfo"))
 		if userInfoStr == "" {
-			resp2, err := mihomoHttp.HttpRequestWithProxy(ctx, pp.Vehicle().Url(),
+			resp2, err := clashHttp.HttpRequestWithProxy(ctx, pp.Vehicle().Url(),
 				http.MethodGet, http.Header{"User-Agent": {"Quantumultx"}}, nil, pp.Vehicle().Proxy())
 			if err != nil {
 				return

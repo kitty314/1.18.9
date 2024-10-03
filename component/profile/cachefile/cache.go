@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/metacubex/mihomo/component/profile"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/component/profile"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/log"
 
 	"github.com/metacubex/bbolt"
 )

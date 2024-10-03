@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net"
 
-	"github.com/metacubex/mihomo/common/sockopt"
-	"github.com/metacubex/mihomo/context"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/common/sockopt"
+	"github.com/kitty314/1.18.9/context"
+	"github.com/kitty314/1.18.9/log"
 
 	D "github.com/miekg/dns"
 )

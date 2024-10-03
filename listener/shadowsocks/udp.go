@@ -3,13 +3,13 @@ package shadowsocks
 import (
 	"net"
 
-	"github.com/metacubex/mihomo/adapter/inbound"
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/sockopt"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
-	"github.com/metacubex/mihomo/transport/shadowsocks/core"
-	"github.com/metacubex/mihomo/transport/socks5"
+	"github.com/kitty314/1.18.9/adapter/inbound"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/sockopt"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/log"
+	"github.com/kitty314/1.18.9/transport/shadowsocks/core"
+	"github.com/kitty314/1.18.9/transport/socks5"
 )
 
 type UDPListener struct {

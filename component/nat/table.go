@@ -4,7 +4,7 @@ import (
 	"net"
 	"sync"
 
-	C "github.com/metacubex/mihomo/constant"
+	C "github.com/kitty314/1.18.9/constant"
 
 	"github.com/puzpuzpuz/xsync/v3"
 )

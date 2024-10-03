@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/dialer"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/dialer"
 )
 
 // Adapter Type

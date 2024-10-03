@@ -10,14 +10,14 @@ import (
 	"strconv"
 	"time"
 
-	CN "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/component/dialer"
-	"github.com/metacubex/mihomo/component/proxydialer"
-	C "github.com/metacubex/mihomo/constant"
-	"github.com/metacubex/mihomo/log"
-	tuicCommon "github.com/metacubex/mihomo/transport/tuic/common"
+	CN "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/ca"
+	"github.com/kitty314/1.18.9/component/dialer"
+	"github.com/kitty314/1.18.9/component/proxydialer"
+	C "github.com/kitty314/1.18.9/constant"
+	"github.com/kitty314/1.18.9/log"
+	tuicCommon "github.com/kitty314/1.18.9/transport/tuic/common"
 
 	"github.com/metacubex/sing-quic/hysteria2"
 

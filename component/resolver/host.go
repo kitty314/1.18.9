@@ -8,9 +8,9 @@ import (
 	"strings"
 	_ "unsafe"
 
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/resolver/hosts"
-	"github.com/metacubex/mihomo/component/trie"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/resolver/hosts"
+	"github.com/kitty314/1.18.9/component/trie"
 	"github.com/metacubex/randv2"
 )
 

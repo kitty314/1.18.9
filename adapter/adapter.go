@@ -12,12 +12,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/metacubex/mihomo/common/atomic"
-	"github.com/metacubex/mihomo/common/queue"
-	"github.com/metacubex/mihomo/common/utils"
-	"github.com/metacubex/mihomo/component/ca"
-	"github.com/metacubex/mihomo/component/dialer"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.18.9/common/atomic"
+	"github.com/kitty314/1.18.9/common/queue"
+	"github.com/kitty314/1.18.9/common/utils"
+	"github.com/kitty314/1.18.9/component/ca"
+	"github.com/kitty314/1.18.9/component/dialer"
+	C "github.com/kitty314/1.18.9/constant"
 	"github.com/puzpuzpuz/xsync/v3"
 )
 

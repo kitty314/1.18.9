@@ -3,9 +3,9 @@ package provider
 import (
 	"net/netip"
 
-	C "github.com/metacubex/mihomo/constant"
-	P "github.com/metacubex/mihomo/constant/provider"
-	"github.com/metacubex/mihomo/rules/common"
+	C "github.com/kitty314/1.18.9/constant"
+	P "github.com/kitty314/1.18.9/constant/provider"
+	"github.com/kitty314/1.18.9/rules/common"
 )
 
 type RuleSet struct {

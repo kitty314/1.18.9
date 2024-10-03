@@ -5,9 +5,9 @@ import (
 	"crypto/tls"
 	"net"
 
-	"github.com/metacubex/mihomo/component/ca"
-	tlsC "github.com/metacubex/mihomo/component/tls"
-	"github.com/metacubex/mihomo/log"
+	"github.com/kitty314/1.18.9/component/ca"
+	tlsC "github.com/kitty314/1.18.9/component/tls"
+	"github.com/kitty314/1.18.9/log"
 
 	utls "github.com/metacubex/utls"
 	"github.com/sagernet/sing-shadowtls"

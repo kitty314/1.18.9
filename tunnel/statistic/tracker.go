@@ -6,11 +6,11 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/metacubex/mihomo/common/atomic"
-	"github.com/metacubex/mihomo/common/buf"
-	N "github.com/metacubex/mihomo/common/net"
-	"github.com/metacubex/mihomo/common/utils"
-	C "github.com/metacubex/mihomo/constant"
+	"github.com/kitty314/1.18.9/common/atomic"
+	"github.com/kitty314/1.18.9/common/buf"
+	N "github.com/kitty314/1.18.9/common/net"
+	"github.com/kitty314/1.18.9/common/utils"
+	C "github.com/kitty314/1.18.9/constant"
 
 	"github.com/gofrs/uuid/v5"
 )
